@@ -3,6 +3,7 @@ import Router from "vue-router";
 import HomeView from "./views/HomeView.vue";
 import ContatoView from "./views/ContatoView.vue";
 import CursosView from "./views/CursosView.vue";
+import CursoItem from "./views/CursoItem.vue";
 
 Vue.use(Router);
 
@@ -24,6 +25,12 @@ export default new Router({
       path: "/cursos",
       name: "cursos",
       component: CursosView,
+    },
+    {
+      path: "/cursos/:curso",
+      name: "curso",
+      component: CursoItem,
+      props: true,
     },
   ],
 });

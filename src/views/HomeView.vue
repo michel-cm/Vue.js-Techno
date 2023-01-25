@@ -48,7 +48,7 @@ export default {
   cursor: pointer;
   padding: 15px 40px;
   font-size: 1rem;
-  margin: 10px 0 40px 0;
+  margin: 10px 0 20px 0;
   box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
   font-family: "Avenir" Arial, Helvetica, sans-serif;
 }
