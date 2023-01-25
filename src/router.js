@@ -4,6 +4,7 @@ import HomeView from "./views/HomeView.vue";
 import ContatoView from "./views/ContatoView.vue";
 import CursosView from "./views/CursosView.vue";
 import CursoItem from "./views/CursoItem.vue";
+import AulaItem from "./views/AulaItem.vue";
 
 Vue.use(Router);
 
@@ -31,6 +32,14 @@ export default new Router({
       name: "curso",
       component: CursoItem,
       props: true,
+      children: [
+        {
+          path: ":aula",
+          name: "aula",
+          component: AulaItem,
+          props: true,
+        },
+      ],
     },
   ],
 });
