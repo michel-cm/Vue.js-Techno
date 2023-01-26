@@ -9,7 +9,7 @@ export default {
     fetchData(url) {
       this.loading = true;
       this.api = null;
-      fetch(`https://techno-mch.vercel.app${url}`)
+      fetch(`http://localhost:3000${url}`)
         .then((r) => r.json())
         .then((r) => {
           setTimeout(() => {
